@@ -1,3 +1,518 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333;
+  font-family: sofia-pro, Gotham, Geneva, Helvetica, Didot, Optima, Tahoma, Verdana, sans-serif;
 }
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: normal;
+  margin: auto; 
+  color:rgb(36, 36, 36); 
+  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: inline-block;
+
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: normal;
+  margin: auto; 
+  color:rgb(36, 36, 36); 
+  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: inline-block;
+  /* width: 200px; 
+  background-color: black; */
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+h4 {
+  padding-bottom: 10px;
+}
+
+i {
+  font-size: 16px;
+  text-align: left;
+  font-weight: normal;
+}
+
+p {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  text-align: left;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+hr.dotted {
+  border-top: 2px dotted #bbb;
+  margin: auto;
+  width: 80%;
+}
+
+.highlight {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 77%;
+  transition: background-size 0.25s ease-in;
+  width: calc(5% + 2em);
+}
+
+/* .highlight:hover {
+  background-size: 100% 88%;
+} */
+
+.button-1 {
+  width: 150px;
+  transition: all 0.5s;
+  border: none;
+  color: #ffffff;
+  background-color: rgb(120, 179, 151);
+  border-radius: 4px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.button-1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-1:hover span {
+  padding-right: 25px;
+}
+
+.button-1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.logo {
+  display: none;
+}
+
+.navbar_whole {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff60;
+}
+
+/* Top navbar float left */
+.navbar_left {
+  overflow: hidden;
+  margin: auto;
+  float: left;
+  width: 70%;
+}
+
+/* Top navbar float right */
+.navbar_right {
+  overflow: hidden;
+  margin: auto;
+  float: right;
+  width: 30%;
+}
+
+
+/* Links inside the navbar */
+.navbar_left a{
+  float: left;
+  display: block;
+  color: #535353;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar_right a{
+  display: block;
+  color: #535353;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #747474;
+}
+
+.navbar_left .project_overview {
+  display: none;
+}
+
+/* Add the color on active link or button */
+.navbar_left a.active {
+  background-color: #ffefe3;
+  color: #535353;
+}
+
+/* Add a background color to navbar links on hover */
+.navbar_left a:hover, .navbar_right a:hover {
+  background-color: #e2e2e2;
+  color: #535353;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.navbar_left .icon {
+  display: none;
+}
+
+/* Top navbar right icon style */
+.right .fas, .right .fab, .right .fa {
+  font-size: 20px;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  color: #535353;
+  border-radius: 0%;
+}
+
+/* Major content dov */
+.container_large {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.container_large img {
+  width: 250px; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.container_large p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container_project {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.container_eachproject  {
+  background-color: #ffffff;
+  display: inline-block;
+  width: 250px;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #c5c5c5;
+  box-shadow: 0 4px 4px 0 rgba(58, 58, 58, 0.1), 0 4px 10px 0 rgba(82, 82, 82, 0.2)
+}
+
+.container_eachproject h4 {
+  color: #426655;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.container_eachproject:hover {
+  background-color: #F2F2F2;
+}
+
+
+.navfooter {
+  overflow: hidden;
+  background-color: white;
+  font-family: Arial;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.navfooter a {
+  font-size: 16px;
+  color: #535353;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navfooter p {
+  display: inline-block;
+  color: grey;
+  padding: 14px 16px;
+  background-color: white;
+}
+
+.spacings {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: inline-block;
+}
+
+.container_small {
+  padding: 30px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.container_button {
+  padding: 30px;
+  overflow: hidden;
+}
+
+
+.container_small .left {
+  float: left;
+  width: 50%;
+}
+
+.container_small .right {
+  float: right;
+  width: 50%;
+}
+
+.container_small .right p {
+  width: 70%;
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.container_medium {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+  /* border-radius: 5px; */
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container_medium p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+.container_mini {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  height: 300px;
+  width: 50%;
+  float: left;
+}
+
+.container_mini p {
+  text-align: left;
+  height: auto;
+  width: 100%;
+}
+
+.container_mini h3 {
+  text-align: center;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_small {
+    width: 100%;
+  }
+
+  .container_small .left {
+    margin: auto;
+    width: 100%;
+  }
+  .container_small .right {
+    width: 100%; 
+  }
+  
+  .container_medium {
+    width: 100%;
+  } 
+
+  .container_medium p, .container_large p {
+    width: 100%;
+  }
+
+  .container_mini {
+    padding-top: 20px;
+    width: 50%;
+    float: left;
+  }
+
+  .container_eachproject  {
+    width: 50%;
+  }
+
+  /* Top navbar float left */
+  .navbar_left {
+    width: 76%;
+  }
+
+  /* Top navbar float right */
+  .navbar_right {
+    width: 24%;
+  }
+    
+    
+}
+
+@media only screen and (max-width: 375px) {
+  .container_large img {
+  width: 60%; 
+  }
+
+  .container_project {
+    width: 100%;
+  }
+
+  .container_eachproject {
+    width: 100%;
+  }
+
+  .container_medium {
+    width: 100%;
+  } 
+
+  .navbar_right {
+    width: 26%;
+  } 
+
+  .navbar_left {
+    width: 74%;
+  } 
+
+
+  .container_medium p, .container_large p {
+    width: 100%;
+  }
+
+  hr.dotted {
+    width: 77%;
+  }
+
+  .container_mini {
+    width: 100%;
+    height: auto;
+  }
+
+  .container_small .left {
+    width: 100%;
+  }
+  
+  .container_small .right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container_small .left img {
+    width: auto;
+  }
+
+  .container_small .right p {
+    width: 100%;
+  }
+
+  .navbar_left span {
+    display: none;
+  }
+
+  .logo {
+    display: inline;
+  }
+
+  .logo img {
+    height: 24px;
+  }
+
+    /* Top navbar float left */
+  .navbar_left {
+    width: 65%;
+  }
+
+  /* Top navbar float right */
+  .navbar_right {
+    width: 35%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .button-1 {
+    width: 100%;  
+    margin-bottom: 20px;
+  }
+
+  .container_large {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+}
+
+
